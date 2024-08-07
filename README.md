@@ -253,7 +253,7 @@ Each entity and relationship is described with cardinality notation (`only one`,
 
 To visualize the ER diagram using Mermaid, ensure you have a compatible Markdown viewer or editor that supports Mermaid syntax.
 
-```mermaid
+```
 erDiagram
     ...
 ```
