@@ -121,8 +121,22 @@ The ER diagram captures the relationships between various entities in the bookst
   - `SupplierID` (FK)
 - **Relationships**:
   - One `Inventory` is stocked with one or more `Books`.
- 
-  ```mermaid
+
+## How to Read the Diagram
+
+- **Relationships**:
+  - `"is located at"`: Indicates where the entity is located.
+  - `"places"`: Indicates the customer placing an order.
+  - `"contains"`: Indicates the order contains order details.
+  - `"for"`: Indicates the order detail is for a book.
+  - `"receives"`: Indicates the book receives reviews.
+  - `"writes"`: Indicates who writes the reviews or books.
+  - `"supplies"`: Indicates the supplier supplies the inventory.
+  - `"manages"`: Indicates the management relationship between employees and managers.
+
+Each entity and relationship is described with cardinality notation (`only one`, `one or more`, `zero or more`) to specify the number of instances involved in each relationship. 
+
+```mermaid
   erDiagram
     
     Address only one--zero or more Customer: "is located at"
@@ -234,19 +248,6 @@ The ER diagram captures the relationships between various entities in the bookst
     }
   ```
 
-## How to Read the Diagram
-
-- **Relationships**:
-  - `"is located at"`: Indicates where the entity is located.
-  - `"places"`: Indicates the customer placing an order.
-  - `"contains"`: Indicates the order contains order details.
-  - `"for"`: Indicates the order detail is for a book.
-  - `"receives"`: Indicates the book receives reviews.
-  - `"writes"`: Indicates who writes the reviews or books.
-  - `"supplies"`: Indicates the supplier supplies the inventory.
-  - `"manages"`: Indicates the management relationship between employees and managers.
-
-Each entity and relationship is described with cardinality notation (`only one`, `one or more`, `zero or more`) to specify the number of instances involved in each relationship. 
 
 ## Usage
 
