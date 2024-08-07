@@ -123,7 +123,7 @@ The ER diagram captures the relationships between various entities in the bookst
   - One `Inventory` is stocked with one or more `Books`.
  
   ```mermaid
-erDiagram
+  erDiagram
     
     Address only one--zero or more Customer: "is located at"
     
