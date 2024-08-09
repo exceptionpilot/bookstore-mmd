@@ -261,6 +261,6 @@ erDiagram
 Replace the `...` with the provided Mermaid diagram code to see the visual representation.
 
 ## Easy setup Local MySQL Server (with Docker)
-```bash
+```shell
 $ docker run --name bookstore --publish 3316:3306 -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:latest
 ```
